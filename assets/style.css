@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+body{
+    background: url(imagem/ampulheta-30-06-2023-1688166534649f608614376.jpg) no-repeat center;
+    background-size: cover;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#date {
+    color: #ffffff;
+    font-size: 1.7rem;
+}
+div {
+    align-items: center;
+    height: 30vh;
+    width: 30%;
+    justify-content: space-around;
+    display: flex;
+    background-color: #1b1b1b24;
+    border-radius: .5rem;
+}
+
+.relogio{
+    margin: auto;
+    display: block;
+    background: #1a1a1a8e;
+    width: 90%;
+    display: flex;
+    margin-bottom: 35px;
+    height: 50vh;
+    backdrop-filter: blur(8px);
+    border-radius: 5px;
+    justify-content: space-around;
+}
+
+.relogio div {
+    background-color: rgb(25, 0, 255);
+    border: 2px solid #ffffff;
+    height: 50%;
+    width: 30%;
+    margin: 2%;
+    padding: 3%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    letter-spacing: 3px;
+}
+
+.relogio span{
+    color: white;
+    font-size: 4rem;
+    font-family: "Roboto", sans-serif;
+}
+
+.relogio span.tempo{
+    font-size: 1rem;
+}
+
+.relogio div span{
+    font-size: 2rem;
+}
+
+.relogio div span.tempo{
+    font-size: 1.5rem;
+}
+
+@media (max-width: 500px){
+    .relogio{
+    height: auto;
+    width: 70%;
+    flex-direction: column;
+    }
+}
+
+#dia, #mes, #ano {
+    color: #ffffff;
+    font-size: 2rem;
+}
